@@ -1,11 +1,4 @@
-def cm_a_pulgadas (centimetros):
-    return centimetros * 0.39
+cent= int (input("Ingrese la longitud: "))
+resultado= float (cent*0.39370 )
 
-def main ():
-
-    centimetros = int(cm_a_pulgadas(centimetros))
-
-    print( {centimetros} , f"cm = " , cm_a_pulgadas)
-
-if __name__ == "__main__" :
-    main()
+print (cent, " cm = " , resultado , " in")
