@@ -73,4 +73,6 @@ elif programa==4:
 
     else:
         print ("Los 4 números son iguales")
-        
+
+else:
+    print ("Solo están disponibles los programas de 2,3 y 4 números")
