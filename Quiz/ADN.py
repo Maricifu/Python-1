@@ -24,7 +24,11 @@ def buscar_sospechoso(muestra, nombres, cromosomas):
 nombres = ["Pedro", "Juan", "Diego"]
 cromosomas = ["00000101010101010101", "00101010101101110111", "00100010010000001001"]
 
+
+
 muestra_usuario = input("Ingrese la secuencia encontrada en la escena del crimen (20 caracteres): ")
+while (not len(muestra_usuario)==20):
+    muestra_usuario = input("Ingrese la secuencia encontrada en la escena del crimen (20 caracteres): ")
 sospechoso, porcentaje_parentesco = buscar_sospechoso(muestra_usuario, nombres, cromosomas)
 
 print(f"\nSospechoso: {sospechoso}")
